@@ -5,6 +5,7 @@ public class Duplicate_String {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
      String Str= "eApooravp";
+     int count=0;
      char[] dup=Str.toUpperCase().toCharArray();
      for(int i=0;i<Str.length();i++)
      {
@@ -13,10 +14,14 @@ public class Duplicate_String {
      {
     	if(dup[i] == dup[j])
     	{
-     System.out.print(dup[j] + " ");
-     
+     System.out.println(dup[j] + " ");
+        count++;
+        
+     }
+    	
+    	
      }
      }
-     }
+     System.out.println("Total Duplicate is" +" " + count);
 }
 }
