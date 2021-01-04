@@ -1,6 +1,6 @@
 package main.string_Programs_Apoorv;
 
-public class Count_Length_of_Eech_Word_Strings_Apoorv {
+public class Count_Length_of_Each_Word_Strings_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
