@@ -1,6 +1,6 @@
-package main.string_Programs;
+package main.string_Programs_Apoorv;
 
-public class Duplicate_String {
+public class Duplicate_String_WithoutCollection_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
