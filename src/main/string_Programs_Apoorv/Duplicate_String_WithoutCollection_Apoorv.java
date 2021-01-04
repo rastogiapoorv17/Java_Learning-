@@ -5,7 +5,8 @@ public class Duplicate_String_WithoutCollection_Apoorv {
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub
-     duplicate_Count();
+     
+		duplicate_Count();
 }
 	public static int duplicate_Count() {
 		String Str= "eApooravp";
