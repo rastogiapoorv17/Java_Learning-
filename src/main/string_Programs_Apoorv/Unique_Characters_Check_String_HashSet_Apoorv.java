@@ -1,13 +1,14 @@
 package main.string_Programs_Apoorv;
 
 import java.util.HashSet;
+import java.util.Set;
 
 
 public class Unique_Characters_Check_String_HashSet_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-  Boolean uniq= unique_check("name");
+  Boolean uniq= unique_check("namea");
   if(uniq==true)
   {
 	  System.out.println("String has unique character");
@@ -18,7 +19,7 @@ public class Unique_Characters_Check_String_HashSet_Apoorv {
 	}
 	public static boolean unique_check(String Str)
 	{
-		HashSet<Character> set= new HashSet<>();
+		Set<Character> set= new HashSet<>();
 		boolean unique =true;
 		char arr[] =Str.toLowerCase().toCharArray();	
 		for(int i=0;i<arr.length;i++)

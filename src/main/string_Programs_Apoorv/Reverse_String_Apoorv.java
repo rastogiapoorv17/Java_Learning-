@@ -13,7 +13,7 @@ public static String reverse(String Str)
 {
 	char[] ch= Str.toCharArray();
 	String Str2="";
-	for(int i=ch.length-1; i>=0;i--) {
+	for(int i=ch.length-1;i>=0;i--) {
 		Str2= Str2+ch[i];
 	}
 	System.out.println(Str2);
@@ -21,3 +21,4 @@ public static String reverse(String Str)
 }
 
 }
+

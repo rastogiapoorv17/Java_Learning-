@@ -4,7 +4,7 @@ public class Largest_Word_String_Size_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      largest_Word("Apoorv : My Name is Apoorv");
+      largest_Word("Introduction : My Name is Apoorv");
 	}
 public static void largest_Word(String Str) {
 		
@@ -12,10 +12,10 @@ public static void largest_Word(String Str) {
 	int largest = 0;
 	for(int i=0;i<Str1.length;i++)
 	{	
-		int b= Str1[i].length();
+		//int b= Str1[i].length();
 		largest= Str1[0].length();
 	//System.out.println(Str1[i].length());
-		if(b>=largest)
+		if(Str1[i].length()>=largest)
 		{
 			largest=Str1[i].length();	
 		
@@ -27,7 +27,7 @@ public static void largest_Word(String Str) {
 	{
 		if(Str1[i].length()==largest)
 		{
-			System.out.println("Largest word is " +Str1[i] + " And its size is " + largest);
+			System.out.println("Largest word is '" +Str1[i] + "' And its size is " + largest);
 		}
       	}
 }
