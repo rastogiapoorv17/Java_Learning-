@@ -22,4 +22,11 @@ public class Count_Number_Of_Words_Strings_Apoorv {
  count=count+1;
 	return count;
 	}
+		
+		/*
+		 * String[] Str1= Str.split(" ");
+		 * 
+		 * return Str1.length;
+		 */
 }
+

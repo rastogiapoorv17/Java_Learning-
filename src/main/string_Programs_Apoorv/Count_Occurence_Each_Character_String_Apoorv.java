@@ -4,7 +4,7 @@ public class Count_Occurence_Each_Character_String_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    occurence("My Name is Apoorv");
+    occurence("My Name is mannishmay");
 	}
    public static void occurence(String Str)
    {

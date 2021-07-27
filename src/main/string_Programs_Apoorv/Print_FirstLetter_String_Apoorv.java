@@ -14,7 +14,7 @@ public static void first_Letter(String Str)
    for(int i=0;i<Str2.length;i++)
    {
 	   
-	   System.out.println(Str2[i].charAt(0));
+	   System.out.print(Str2[i].charAt(0)+ " ");
    }
 }
 }

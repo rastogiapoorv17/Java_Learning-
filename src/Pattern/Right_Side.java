@@ -1,16 +1,19 @@
 package Pattern;
 
+import java.util.Scanner;
+
 public class Right_Side {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      
-		for(int i=1;i<=5;i++) {
-			for(int j=4;j>=i;j--) {
+      Scanner sc= new Scanner(System.in);
+      int n = sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			for(int j=n;j>i;j--) {
 				System.out.print(" ");
 			}
 			for(int k=1;k<=i;k++) {
-			System.out.print("*");
+			System.out.print("#");
 			}
 			System.out.println("");
 		}

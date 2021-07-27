@@ -1,53 +1,74 @@
 package main.string_Programs_Apoorv;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Anagram_String_Apoorv {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-    String Str1="Tony";
-    String Str2="Noty";
-    if(Str1.length()==Str2.length())
-    {
-		anagram(Str1, Str2);
+    static boolean isAnagram(String a, String b) {
+        // Complete the function
+    	boolean flag=false;
+    	
+        char[] ana1= a.toUpperCase().toCharArray();
+        
+        char[] ana2= b.toUpperCase().toCharArray();
+        
+        
+         char temp='\0';
+         if(a.length()!=b.length()) {
+     		flag=false;
+     		
+     	}
+         else {
+        for(int i=0;i<ana1.length;i++){
+            
+            for(int j=0;j<ana1.length;j++){
+                
+                if(ana1[i]>ana1[j]) {
+                  temp=ana1[i];
+                  ana1[i]=ana1[j];
+                  ana1[j]=temp;
+                  
+              }
+            }
+        }
+ for(int i=0;i<ana2.length;i++){
+            
+            for(int j=0;j<ana2.length;j++){
+                
+                if(ana2[i]>ana2[j]) {
+                  temp=ana2[i];
+                  ana2[i]=ana2[j];
+                  ana2[j]=temp;
+                  
+              }
+            }
+        }
+         String Str3="";
+        String Str4= "";
+        
+        for(int i=0;i<ana1.length;i++)
+        {
+            Str3= Str3+ana1[i];
+            Str4=Str4+ana2[i];
+            
+            
+        }
+            
+        
+        if(Str3.equalsIgnoreCase(Str4)){
+            flag=true;
+        }
+         }
+        return flag;
     }
-    else if(Str1.length()!=Str2.length())
-    {
-    	System.out.println("Not Anagram");
-    }		 
-	}
-	
-	
-	public static void anagram(String Str1, String Str2)
-	{
-		char[] ana1= Str1.toUpperCase().toCharArray();
-		Arrays.sort(ana1);
-		char[] ana2= Str2.toUpperCase().toCharArray();
-		Arrays.sort(ana2);
-	    String Str3="";
-	    String Str4= "";
-	    
-	    for(int i=0;i<ana1.length;i++)
-	    {
-	    	Str3= Str3+ana1[i];
-	    	Str4=Str4+ana2[i];
-	    	
-	    	
-	    }
-		    
-		if(Str3.equalsIgnoreCase(Str4))
-    	{
-    		System.out.println("Anagram");
-    		
-    	}
-    	else 
-    	{
-    		System.out.println("Not Anagram");
-    		
-    	}
-				
-		
-	}
 
+    public static void main(String[] args) {
+    
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+        scan.close();
+        boolean ret = isAnagram(a, b);
+        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+    }
 }
