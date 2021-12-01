@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Anagram_String_Apoorv {
 
-    static boolean isAnagram(String a, String b) {
+    public static boolean isAnagram(String a, String b) {
         // Complete the function
     	boolean flag=false;
     	

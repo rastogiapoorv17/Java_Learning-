@@ -4,14 +4,14 @@ public class Inheritance {
 	public static void main(String args[]) {
 		
 		B obj1 =new B();
-		obj1.display();
+		obj1.display(3);
 		
 		
 	}
 }
 	class A {
 		
-		public void display()
+		public void display(int i)
 		{
 			System.out.println("Test A");
 		}
@@ -20,8 +20,10 @@ public class Inheritance {
 	
 	class B extends A
 	{
-		public void display(int A)
+		
+		public void display(int i)
 		{
+			super.display(i);
 			System.out.println("Test B");
 		}
 	}

@@ -5,7 +5,7 @@ public class Remove_Duplicate_String_WithoutCollection_Apoorv {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Remove_Duplicate_String_WithoutCollection_Apoorv rem = new Remove_Duplicate_String_WithoutCollection_Apoorv();
-    String newString= rem.RemoveDuplicate("EApoorv");
+    String newString= rem.RemoveDuplicate("EApooErv");
       System.out.println(newString);
 	}
 public String RemoveDuplicate(String Str)
@@ -13,7 +13,7 @@ public String RemoveDuplicate(String Str)
 	
 	String Str1="";
     char[] dup=Str.toUpperCase().toCharArray();
-    int count=0;
+    int count;
     for(int i=0;i<dup.length-1;i++)
     {
     	 count=0;
