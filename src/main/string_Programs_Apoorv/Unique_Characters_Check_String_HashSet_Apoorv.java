@@ -8,7 +8,7 @@ public class Unique_Characters_Check_String_HashSet_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-  Boolean uniq= unique_check("namea");
+  Boolean uniq= unique_check("nNamea");
   if(uniq==true)
   {
 	  System.out.println("String has unique character");

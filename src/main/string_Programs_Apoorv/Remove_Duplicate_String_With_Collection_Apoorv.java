@@ -8,7 +8,7 @@ public class Remove_Duplicate_String_With_Collection_Apoorv {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-   String Str=remove_Duplicates("Helloe");
+   String Str=remove_Duplicates("12Helloooe");
    System.out.println(Str);
 	}
    public static String remove_Duplicates(String Str) {
